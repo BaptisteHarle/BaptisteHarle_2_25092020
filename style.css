@@ -1,0 +1,28 @@
+:root {
+  --blue: #0065FC;
+  --lightblue: #DEEBFF;
+  --grey: #F2F2F2;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+.menu-list {
+  display: flex;
+}
+.menu-list-item {
+  margin-right: 10%;
+}
+.inscription {
+  margin-left: 10%;
+}
+.hebergements-img {
+   width: 50%;
+}
+.double-container {
+  display: flex;
+}
+.button {
+  background-color: var(--blue);
+  color: white;
+}
