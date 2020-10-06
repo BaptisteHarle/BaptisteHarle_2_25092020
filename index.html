@@ -4,61 +4,98 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Reservia</title>
-<link rel="stylesheet" href="style.css">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <!--MENU BEGIN-->
   <header class="menu">
-    <span class="logo">
+    <figure class="logo">
       <img src="images/logo/Reservia.svg" alt="Reservia - pour des vacances de reve">
-    </span>
-
+    </figure>
     <nav class="menu-list">
-      <div class="menu-list-item"><a href="#hebergements">Hébergements</a></div>
-      <div class="menu-list-item"><a href="#activités">Activités</a></div>
-      <div class="incrisption">S'inscrire</div>
+      <ul>
+        <li class="menu-list-item"><a href="#hebergements">Hébergements</a></li>
+        <li class="menu-list-item"><a href="#activités">Activités</a></li>
+        <li class="incrisption">S'inscrire</div>
+      </ul>  
     </nav>
   </header>
   <!--MENU END-->
   <!---->
   <section>
     <p>Trouvez votre hébergement pour des vacances de rêve</p>
-    <p>En plein centre ou pleine nature</p>
+    <p>En plein centre ou pleine nature <i class="fas fa-map-marker-alt"></i></p>
+    
+    <aside class="searchbar">
+       <i class="fas fa-map-marker-alt"></i>
+       <textarea class="bold">
+         Marseille,France
+       </textarea>
+       <button class="button">Rechercher</button>
+    </aside>
   </section>
   <!---->
   <!--Debut section double container photos-->
-  <section class="double-container">
-    <div class="hébergement-container" id="hebergements">
-      <p>Hébergements à Marseille</p>
-      <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="auberge cannebiere">
-      <p class="bold">Auberge de la Cannebière <br> Nuit a partir de 25€</p>
-      <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="hotel du port">
-      <p class="bold">Hôtel du port <br> Nuit a partir de 52€</p>
-      <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="hotel les mouettes">
-      <p class="bold">Hôtel Les mouettes <br> Nuit a partir de 76€</p>
-      <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="hotel de la mer">
-      <p class="bold">Hôtel de la mer <br> Nuit a partir de 46€</p>
-      <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="auberge le panier">
-      <p class="bold">Auberge le Panier<br> Nuit a partir de 23€</p>
-      <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="hotel chez amina">
-      <p class="bold">Hôtel chez Amina <br> Nuit a partir de 96€</p>
-      <p class="bold">Afficher plus</p>
-    </div>
-    <span class="populaire-container">
-      <p>Les plus populaires</p>
-      <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="le soleil du matin">
-      <p class="bold">Hôtel Le soleil du matin <br> Nuit a partir de 128€</p>
-      <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="au coeur de l'eau">
-      <p class="bold">Au cour de l'eau <br> Chambres d'hôtes <br> Nuit a partir de 71€</p>
-      <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="hotel bleu et blanc">
-      <p class="bold">Hôtel Tout bleu et Blanc <br> Nuit a partir de 68€</p>
-    </span>
-  </section>
+  <p>Hébergements à Marseille</p>
+  <main class="double-container">
+    <section class="hébergement-container" id="hebergements">
+        <figure>
+          <img class="hebergements-img" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="auberge cannebiere">
+          <figcaption class=""> Auberge de la Cannebière </figcaption>
+        </figure>
+           <p>Nuit a partir de 25€</p>
+        <figure>
+          <img class="hebergements-img" src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="hotel du port">
+          <figcaption>Hôtel du port</figcaption>
+        </figure>
+           <p>Nuit a partir de 52€</p>
+         <figure>
+          <img class="hebergements-img" src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="hotel les mouettes">
+          <figcaption>Hôtel les mouettes</figcaption>
+         </figure>
+          <p>Nuit a partir de 76€</p>
+        <figure>
+          <img class="hebergements-img" src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="hotel de la mer">
+          <figcaption>Hôtel de la mer</figcaption>
+        </figure>
+          <p>Nuit a partir de 46€</p>
+        <figure>
+          <img class="hebergements-img" src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="auberge le panier">
+          <figcaption>Auberge le Panier</figcaption>
+        </figure>
+          <p>Nuit a partir de 23€</p>
+        <figure>
+          <img class="hebergements-img" src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="hotel chez amina">
+          <figcaption>Hôtel chez Amina</figcaption>
+        </figure>
+           <p>Nuit a partir de 96€</p>
+           <p class="bold">Afficher plus</p>
+     </section>
+     <section class="populaire-container">
+           <p>Les plus populaires</p>
+        <figure>
+          <img class="hebergements-img" src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="le soleil du matin">
+          <figcaption>Hôtel Le soleil du matin </figcaption>
+        </figure>
+           <p>Nuit a partir de 128€</p>
+        <figure>
+          <img class="hebergements-img" src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="au coeur de l'eau">
+          <figcaption>Au cour de l'eau <br> Chambres d'hôtes </figcaption>
+        </figure>
+          <p>Nuit a partir de 71€</p>
+        <figure>
+          <img class="hebergements-img" src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="hotel bleu et blanc">
+          <figcaption>Hôtel Tout bleu et Blanc</figcaption>
+        </figure>
+      <p> Nuit a partir de 68€</p>
+    </section>
+  </main>
   <!--fin double container-->
   <!--Debut activités-->
   <section class="activités-container">
     <p id="activités">Activités à Marseille</p>
-    <span class="activités-photos-container">
+    <div class="activités-photos-container">
       <img src="images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="vieux port">
       <p class="bold">Vieux Port</p>
       <img src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort">
@@ -71,29 +108,27 @@
       <p class="bold">Notre-Dame-de-la-Garde</p>
       <img src="images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="parc longchamp">
       <p class="bold">Parc Longchamp</p>
-    </span>
+    </div>
   </section>
   <!--Fin activités-->
   <!--Debut footer-->
   <footer>
-    <section>
-      <ul>
-        <li class="bold">A propos</li>
-        <li>Fonctionnement du site</li>
-        <li>Conditions générales de vente</li>
-        <li></li>Données et confidentialité</li>
-      </ul>
-      <ul>
-         <li class="bold">Nos hébergements</li>
-         <li>Charte qualité</li>
-         <li>Soumettre votre hôtel</li>
-      </ul>
-      <ul>
-        <li class="bold">Assistance</li>
-        <li>Centre d'aide</li>
-        <li>Nous contacter</li>
+      <div>
+        <p class="bold">A propos</p>
+        <p>Fonctionnement du site</p>
+        <p>Conditions générales de vente</p>
+        <p>Données et confidentialité</p>
       </div>
-    </section>
+      <div>
+         <p class="bold">Nos hébergements</p>
+         <p>Charte qualité</p>
+         <p>Soumettre votre hôtel</p>
+      </div>
+      <div>
+        <p class="bold">Assistance</p>
+        <p>Centre d'aide</p>
+        <p>Nous contacter</p>
+      </div>
   </footer>
 </body>
 </html>
