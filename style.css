@@ -1,7 +1,11 @@
 :root {
   --blue: #0065FC;
   --lightblue: #DEEBFF;
-  --grey: #F2F2F2;
+  --lightgrey: #F2F2F2;
+  --grey: #c9c9c9;
+}
+body {
+  font-family: Arial;
 }
 .menu {
   display: flex;
@@ -9,6 +13,7 @@
 }
 .menu-list {
   display: flex;
+  list-style: none;
 }
 .menu-list-item {
   margin-right: 10%;
@@ -25,4 +30,107 @@
 .button {
   background-color: var(--blue);
   color: white;
+}
+.searchbar {
+  width: 400px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--lightgrey);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.searchBar__iconContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background: var(--lightgrey);
+  width: 40px;
+  color: black;
+  font-size: 16px;
+}
+.searchBar__input {
+  height: 100%;
+  width: 260px;
+  padding: unset;
+  padding-left: 10px;
+  border: unset;
+  font-weight: bold;
+  color: black;
+  border-radius: 0px;
+}
+.searchBar__input::placeholder {
+  color: black;
+}
+.searchBar__button {
+  height: 100%;
+  width: 100px;
+  background-color: var(--blue);
+  color: white;
+  border: unset;
+  font-weight: bold;
+  letter-spacing: 0.8;
+}
+/* .upperSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px;
+} */
+.filtres {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+.filtres-container {
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+  height: 40px;
+  border: 2px solid #E7E7E7;
+  border-radius: 22px;
+  padding-right: 20px;
+  margin-left: 30px;
+
+}
+.filtres-icon {
+  color: var(--blue);
+  
+}
+.filtres-icon-container {
+  height: 40px;
+  width: 40px;
+  background-color: var(--lightblue);
+  border-radius: 20px;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.footer-container {
+  height: 250px;
+  background-color: #F2F2F2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bold {
+  font-weight: bold;
+}
+.footer-list {
+  list-style: none;
+  padding-left: unset;
+}
+.footer-list-item {
+  margin-top: 10px;
+}
+.footer-component {
+  width: 33%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
 }
