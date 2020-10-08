@@ -113,7 +113,7 @@ body {
 }
 .footer-container {
   height: 250px;
-  background-color: #F2F2F2;
+  background-color: var(--lightgrey);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -129,8 +129,27 @@ body {
   margin-top: 10px;
 }
 .footer-component {
-  width: 33%;
+    width: 33%;
     justify-content: center;
     align-items: center;
     margin-left: 5%;
+}
+.hebergement-figure {
+  margin-left: unset;
+}
+.stars-container {
+  display: flex;
+}
+.full-star {
+  color: var(--blue)
+}
+.grey-star {
+ color: var(--lightgrey);
+}
+.double-container {
+  height: 700px;
+  background-color: var(--lightgrey);
+}
+.hebergement-component {
+  
 }
