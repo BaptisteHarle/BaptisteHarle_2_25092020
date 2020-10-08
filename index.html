@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Reservia</title>
-  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  <meta name="referrer" content="strict-origin" />
+  <script src="https://kit.fontawesome.com/159f63adb5.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
+  <title>Reservia</title>
 </head>
 <body>
   <!--MENU BEGIN-->
@@ -14,26 +15,52 @@
       <img src="images/logo/Reservia.svg" alt="Reservia - pour des vacances de reve">
     </figure>
     <nav class="menu-list">
-      <ul>
+      <ul class="menu-list">
         <li class="menu-list-item"><a href="#hebergements">Hébergements</a></li>
         <li class="menu-list-item"><a href="#activités">Activités</a></li>
-        <li class="incrisption">S'inscrire</div>
+        <li class="incrisption">S'inscrire</li>
       </ul>  
     </nav>
   </header>
   <!--MENU END-->
   <!---->
-  <section>
+  <section class="upperSection">
     <p>Trouvez votre hébergement pour des vacances de rêve</p>
-    <p>En plein centre ou pleine nature <i class="fas fa-map-marker-alt"></i></p>
-    
+    <p>En plein centre ou pleine nature</p>
     <aside class="searchbar">
-       <i class="fas fa-map-marker-alt"></i>
-       <textarea class="bold">
-         Marseille,France
-       </textarea>
-       <button class="button">Rechercher</button>
+       <div class="searchBar__iconContainer">
+        <i class="fas fa-map-marker-alt"></i>
+       </div>
+       <input class="searchBar__input" placeholder="Marseille, France">
+       <button class="searchBar__button">Rechercher</button>
     </aside>
+    <div class="filtres">
+      <p>Filtres</p>
+      <div class="filtres-container">
+        <div class="filtres-icon-container">
+          <i class="fas fa-money-bill-wave filtres-icon"></i>
+        </div>
+        <label>Économique</label>
+      </div>
+      <div class="filtres-container">
+        <div class="filtres-icon-container">
+          <i class="fas fa-child filtres-icon"></i>
+        </div>
+        <label>Familial</label>
+      </div>
+      <div class="filtres-container">
+        <div class="filtres-icon-container">
+          <i class="fas fa-heart filtres-icon"></i>
+        </div>
+        <label>Romantique</label>
+      </div>
+      <div class="filtres-container">
+        <div class="filtres-icon-container">
+          <i class="fas fa-dog filtres-icon"></i>
+        </div>
+        <label>Animaux autorisés</label>
+      </div>
+    </div>
   </section>
   <!---->
   <!--Debut section double container photos-->
@@ -112,23 +139,29 @@
   </section>
   <!--Fin activités-->
   <!--Debut footer-->
-  <footer>
-      <div>
-        <p class="bold">A propos</p>
-        <p>Fonctionnement du site</p>
-        <p>Conditions générales de vente</p>
-        <p>Données et confidentialité</p>
-      </div>
-      <div>
-         <p class="bold">Nos hébergements</p>
-         <p>Charte qualité</p>
-         <p>Soumettre votre hôtel</p>
-      </div>
-      <div>
-        <p class="bold">Assistance</p>
-        <p>Centre d'aide</p>
-        <p>Nous contacter</p>
-      </div>
+  <footer class="footer-container">
+    <div class="footer-component">
+      <h4 class="bold">A propos</h4>
+      <ul class="footer-list">
+        <li class="footer-list-item">Fonctionnement du site</li>
+        <li class="footer-list-item">Conditions générales de vente</li>
+        <li class="footer-list-item">Données et confidentialité</li>
+      </ul>
+    </div>
+    <div class="footer-component">
+      <h4 class="bold">Nos hébergements</h4>
+      <ul class="footer-list">
+         <li class="footer-list-item">Charte qualité</li>
+         <li class="footer-list-item">Soumettre votre hôtel</li>
+      </ul>
+    </div>
+    <div class="footer-component">
+      <h4 class="bold">Assistance</h4>
+      <ul class="footer-list">
+        <li class="footer-list-item">Centre d'aide</li>
+        <li class="footer-list-item">Nous contacter</li>
+      </ul> 
+    </div>
   </footer>
 </body>
 </html>
