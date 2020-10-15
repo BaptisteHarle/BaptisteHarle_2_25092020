@@ -24,9 +24,6 @@ body {
 .hebergements-img {
    width: 50%;
 }
-.double-container {
-  display: flex;
-}
 .button {
   background-color: var(--blue);
   color: white;
@@ -147,9 +144,68 @@ body {
  color: var(--lightgrey);
 }
 .double-container {
-  height: 700px;
+  min-height: 700px;
   background-color: var(--lightgrey);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hebergement-element {
+  width: 300px;
+  height: 250px;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 10px 20px rgba(0,0, 0, 0.19), 0 6px 6px rgba(0,0,0,0.23)
+}
+.hébergement-container {
+  width: 60%;
+  height: 100%;
+  border-radius: 10px;
+  padding: 20px;
+  overflow: hidden;
 }
 .hebergement-component {
-  
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.hebergements-img {
+  width: 100%;
+  height: 60%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.populaire-container {
+  width: 30%;
+  height: 100%;
+  border-radius: 10px;
+  padding: 20px;
+}
+.hebergement-night, .hebergement-title {
+  margin: unset;
+}
+.stars-container, .hebergement-night {
+   margin-top: 10px;
+}
+.hebergement-price {
+  font-weight: bold;
+}
+.footer-content {
+display: contents;
+list-style: none;
+}
+
+
+
+/** phones **/
+@media screen and (max-width: 576px) {
+
+}
+
+/** tablettes */
+@media screen and (max-width: 1024px) and (min-width: 650px)  {
+
 }
