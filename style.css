@@ -110,8 +110,8 @@ body {
   height: 250px;
   background-color: var(--lightgrey);
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 .bold {
   font-weight: bold;
@@ -237,23 +237,68 @@ list-style: none;
   align-items: flex-start;
   justify-content: space-between;
 }
-
-.activités-photos-container {
+#activites-article {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   height: 640px;
-  width: 25%;
+  margin-bottom: 80px;
+}
+.big-activites-photos-container {
+  height: 100%;
+  width: 23%;
   border-radius: 10px;
   box-shadow: 0 10px 20px rgba(0,0, 0, 0.19), 0 6px 6px rgba(0,0,0,0.23)
 }
-.activités-img {
+.activites-group {
+  height: 100%;
+  width: 23%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.activites-group figure {
+  margin: unset;
+}
+figure {
+  margin: unset;
+}
+figcaption {
+}
+.medium-activites-photos-container {
+  height: 300px;
+  /* width: 100%; */
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0,0, 0, 0.19), 0 6px 6px rgba(0,0,0,0.23)
+}
+.medium-activites-img {
   width: 100%;
-  height: 90%;
+  /* background: yellow; */
+  height: 85%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
-figcaption {
-
+.large-activites-photos-container {
+  /* height: 340px; */
+  height: 55%;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0,0, 0, 0.19), 0 6px 6px rgba(0,0,0,0.23)
 }
-
+figcaption {
+  display: flex;
+  align-items: center;
+  height: 15%;
+  margin-left: 1.5em;
+}
+.little-activites-container {
+  /* height: 260px; */
+  height: 37%;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0,0, 0, 0.19), 0 6px 6px rgba(0,0,0,0.23)
+}
 /* Phones */
 @media only screen 
   and (min-device-width: 320px) 
@@ -265,9 +310,7 @@ figcaption {
   }
   .menu-list {
      flex-direction: column; 
-    
   }
-
   .upperSection h1, .upperSection p {
     text-align: center;
   }
@@ -314,6 +357,34 @@ figcaption {
     object-fit: cover;
   }
   .populaire-component aside {
+    width: 100%;
+  }
+  #activites-article {
+    flex-direction: column;
+    height: unset;
+    /* min-height: 640px; */
+  }
+  #activites-article figure {
+    width: 90%;
+    margin-bottom: 30px;
+  }
+  .activites-group {
+    width: 90%;
+  }
+  #activites-article .activites-group figure {
+    width: 100%;
+  }
+  .large-activites-photos-container .medium-activites-img {
+    height: 217px;
+  }
+  .footer-container {
+    height: unset;
+  }
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-content li {
     width: 100%;
   }
 }
