@@ -226,14 +226,14 @@ body {
   background-color: white;
   width: 280px;
   height: 250px;
-  border-radius: 10px;
+  border-radius: 20px;
   padding: 10px;
   box-shadow: 0 10px 20px rgba(0,0, 0, 0.19), 0 6px 6px rgba(0,0,0,0.23)
 }
 .hébergement-container {
   width: 60%;
   height: 100%;
-  border-radius: 10px;
+  border-radius: 20px;
   background-color: var(--lightgrey);
   padding: 20px;
   overflow: hidden;
@@ -254,7 +254,7 @@ body {
 .populaire-container {
   width: 30%;
   height: 100%;
-  border-radius: 10px;
+  border-radius: 20px;
   background-color: var(--lightgrey);
   padding: 20px;
 }
@@ -275,7 +275,7 @@ list-style: none;
   height: 160px;
   width: calc(100% - 20px);
   background: white;
-  border-radius: 5px;
+  border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -285,8 +285,8 @@ list-style: none;
 .populaire-component img {
   height: 100%;
   width: 160px;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 .populaire-component section {
   width: calc(100% - 160px);
