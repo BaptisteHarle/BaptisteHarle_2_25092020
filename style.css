@@ -90,7 +90,7 @@ body {
   border-radius: 8px;
   overflow: hidden;
 }
-.searchBar__iconContainer {
+.fa-map-marker-alt {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -115,12 +115,15 @@ body {
 }
 .searchBar__button {
   height: 100%;
-  width: 100px;
+  width: 120px;
   background-color: var(--blue);
   color: white;
   border: unset;
   font-weight: bold;
   letter-spacing: 0.8;
+}
+.search {
+  display: none;
 }
 /* .upperSection {
   display: flex;
@@ -145,7 +148,7 @@ body {
   margin-left: 30px;
 }
 .filtres-container:hover {
-  color: white;
+  color: var(--blue);
   background-color: var(--lightblue);
   transition: all .25s ease;
 }
@@ -250,7 +253,7 @@ a {
 }
 a:visited {
   text-decoration: none; 
-  decoration: none; 
+  color: black;
 }
 .hebergement-element {
   background-color: white;
@@ -447,16 +450,34 @@ figcaption {
   .searchbar {
     width: 100%;
   }
-  .searchbar i {
-    padding-left: 10px;
+  .searchBar__input {
+    font-size: 15px;
+    padding-left: 20px;
+  }
+  .searchBar__button {
+    display: none;
+  }
+  .fa-search {
+    width: 15%;
+    background-color: var(--blue);
+    color: white;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
   }
   .filtres {
     flex-direction: column;
+    align-items: baseline;
   }
   .filtres-container {
     margin-left: unset;
-    width: 80%;
     margin-bottom: 10px;
+  }
+  .familial {
+    position: absolute;
+    right: 16px;
   }
   .double-container {
     flex-direction: column-reverse;
