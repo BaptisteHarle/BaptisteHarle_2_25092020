@@ -73,6 +73,10 @@ body {
   /* padding: 30px; */
   /* border-top: 5px solid var(--blue); */
 }
+a a:visited{
+  text-decoration: none;
+  color: black ;
+}
 .hebergements-img {
    width: 50%;
 }
@@ -400,10 +404,9 @@ figcaption {
   box-shadow: 0 10px 20px rgba(0,0, 0, 0.19), 0 6px 6px rgba(0,0,0,0.23)
 }
 /* Phones */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3) { 
+@media  screen 
+  and (min-device-width: 280px)
+  and (max-device-width: 1280px)  { 
   body {
     margin-left: 0px;
     margin-right: 0px;
@@ -466,6 +469,7 @@ figcaption {
     align-items: center;
     justify-content: center;
     border-radius: 10px;
+    
   }
   .filtres {
     flex-direction: column;
@@ -552,10 +556,34 @@ figcaption {
 }
 /* Tablettes */
 @media only screen 
-  and (min-device-width: 813px) 
+  and (min-device-width: 768px) 
   and (max-device-width: 1112px)
   and (-webkit-min-device-pixel-ratio: 2) {
-    .double-container {
-      display: none;
+      .searchbar {
+        width: 400px;
+        height: 40px;
+        display: flex;
+        /* align-items: center; */
+        /* justify-content: center; */
+        border: 1px solid var(--lightgrey);
+        border-radius: 8px;
+        overflow: hidden;
+    }
+    .search {
+      margin-left: 39%;
+    }
+    .hébergement-container {
+      display: flex;
+    }
+    .hébergement-container h2 {
+      position: absolute;
+    }
+    .row {
+    display: grid;
+    margin-top: 50px;
+    }
+    .bold-tablette {
+      position: absolute;
+      margin-top: 100%;
     }
 }
