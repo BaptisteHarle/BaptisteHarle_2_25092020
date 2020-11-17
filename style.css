@@ -446,6 +446,8 @@ figcaption {
   .menu-list-item-mobile:hover {
     color: var(--blue);
     border-color: var(--blue);
+    padding-left: 18%;
+    padding-right: 18%;
   }
   .upperSection h1 {
     font-size: 25px;
@@ -557,8 +559,7 @@ figcaption {
 /* Tablettes */
 @media only screen 
   and (min-device-width: 768px) 
-  and (max-device-width: 1112px)
-  and (-webkit-min-device-pixel-ratio: 2) {
+  and (max-device-width: 1112px) {
       .searchbar {
         width: 400px;
         height: 40px;
@@ -585,5 +586,15 @@ figcaption {
     .bold-tablette {
       position: absolute;
       margin-top: 100%;
+    }
+    .filtres {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .familial {
+      position: relative;
+      right: 0px;
     }
 }
