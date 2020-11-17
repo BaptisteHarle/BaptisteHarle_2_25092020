@@ -45,30 +45,30 @@
     <section>
       <h2>Filtres</h2>
       <div class="filtres">
-      <div class="filtres-container">
-        <div class="filtres-icon-container">
-          <i class="fas fa-money-bill-wave filtres-icon"></i>
+        <div class="filtres-container">
+          <div class="filtres-icon-container">
+            <i class="fas fa-money-bill-wave filtres-icon"></i>
+          </div>
+          <label>Économique</label>
         </div>
-        <label>Économique</label>
-      </div>
-      <div class="filtres-container familial">
-        <div class="filtres-icon-container">
-          <i class="fas fa-child filtres-icon"></i>
+        <div class="filtres-container familial">
+          <div class="filtres-icon-container">
+            <i class="fas fa-child filtres-icon"></i>
+          </div>
+          <label>Familial</label>
         </div>
-        <label>Familial</label>
-      </div>
-      <div class="filtres-container">
-        <div class="filtres-icon-container">
-          <i class="fas fa-heart filtres-icon"></i>
+        <div class="filtres-container">
+          <div class="filtres-icon-container">
+            <i class="fas fa-heart filtres-icon"></i>
+          </div>
+          <label>Romantique</label>
         </div>
-        <label>Romantique</label>
-      </div>
-      <div class="filtres-container">
-        <div class="filtres-icon-container">
-          <i class="fas fa-dog filtres-icon"></i>
+        <div class="filtres-container">
+          <div class="filtres-icon-container">
+            <i class="fas fa-dog filtres-icon"></i>
+          </div>
+          <label>Animaux autorisés</label>
         </div>
-        <label>Animaux autorisés</label>
-      </div>
       </div>
     </section>
     <figure class="info">
@@ -81,14 +81,14 @@
   <!---->
   <!--Debut section double container photos-->
   <main class="double-container">
-    <article class="hébergement-container" id="hebergements">
+    <article class="hebergement-container" id="hebergements">
       <h2>Hébergements à Marseille</h2>
       <div class="row">
         <a href="#">
-          <div class="hebergement-element">
-            <img class="hebergements-img" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+          <section class="hebergement-component">
+            <div class="hebergement-element">
+              <img class="hebergements-img" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
               alt="auberge cannebiere">
-            <section class="hebergement-component">
               <h3 class="hebergement-title">Auberge de la Cannebière</h3>
               <p class="hebergement-night">Nuit a partir de <span class="hebergement-price">25€</span></p>
               <div class="stars-container">
@@ -96,10 +96,10 @@
                 <i class="fas fa-star full-star"></i>
                 <i class="fas fa-star full-star"></i>
                 <i class="fas fa-star full-star"></i>
-                <i class="fas fa-star grey-star"></i>
+                <i class="fas fa-star full-star"></i>
               </div>
-            </section>
-          </div>
+            </div>
+          </section>
         </a>
         <a href="#">
           <section class="hebergement-component">
@@ -134,8 +134,8 @@
               </div>
             </div>
           </section>
+        </a>
       </div>
-      </a>
       <div class="row">
         <a href="#">
           <section class="hebergement-component">
@@ -187,8 +187,8 @@
               </div>
             </div>
           </section>
+        </a>
       </div>
-      </a>
       <a class="bold bold-tablette">Afficher plus</a>
     </article>
     <section class="populaire-container">
@@ -197,7 +197,7 @@
         <i class="fas fa-chart-line"></i>
       </div>
       <a href="#">
-        <section class="populaire-component">
+        <div class="populaire-component">
           <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="le soleil du matin">
           <section class="populaire-aside">
             <div>
@@ -212,10 +212,10 @@
               <i class="fas fa-star grey-star"></i>
             </div>
           </section>
-        </section>
+        </div>
       </a>
       <a href="#">
-        <section class="populaire-component">
+        <div class="populaire-component">
           <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="le soleil du matin">
           <section class="populaire-aside">
             <div>
@@ -230,10 +230,10 @@
               <i class="fas fa-star grey-star"></i>
             </div>
           </section>
-        </section>
+        </div>
       </a>
       <a href="#">
-        <section class="populaire-component">
+        <div class="populaire-component">
           <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="le soleil du matin">
           <section class="populaire-aside">
             <div>
@@ -248,7 +248,7 @@
               <i class="fas fa-star grey-star"></i>
             </div>
           </section>
-        </section>
+        </div>
       </a>
     </section>
   </main>
@@ -256,7 +256,7 @@
   <!--Debut activites-->
   <article class="activites-container ">
     <h2 id="activites">Activités à Marseille</h2>
-    <section id="activites-article">
+    <div id="activites-article">
       <figure class="big-activites-photos-container" onclick="onNavigate()">
         <img class="medium-activites-img " src="images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
           alt="vieux port">
@@ -291,7 +291,7 @@
           <figcaption class="bold">Parc Longchamp</figcaption>
         </figure>
       </div>
-    </section>
+    </div>
   </article>
   <!--Fin activites-->
   <!--Debut footer-->
